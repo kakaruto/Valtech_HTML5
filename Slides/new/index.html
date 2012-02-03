@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Coding Dojo HTML5 - Valtech</title>
+    <link href="css/slides.css" rel="stylesheet" />
+    <link href="css/sunburst.css" rel="stylesheet" />
+</head>
+<body>
+<div id="impress" class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b> or <b>Safari</b> browser. Firefox 10 (to be released soon) will also handle it.</p>
+    </div>
+
+   
+    <div id="title" class="step" data-x="-300" data-y="-600" data-scale="5">
+    <h1>Coding Dojo</h1>
+    <img src="img/HTML5_Logo_512.png">
+
+        <p class="footer">
+        7 Février 2012 - <span>Valtech</span>
+        </p>
+    </div>
+
+    <div id="codingDojo" class="step" data-x="3200" data-y="-1500" data-scale="3">
+        <h2>Coding Dojo ?</h2>
+    </div>
+
+    <div id="kezako" class="step" data-x="2600" data-y="-1100" >
+        <h2>Qu'est-ce que c'est ?</h2>
+        <img src="img/devTurn.png" class="imgRight" width="300px">
+        <ul>
+            <li>1 PC + 1 videoprojecteur</li>
+            <li>2 accompagnateurs</li>
+            <li>1 seul développeur à la fois</li>
+            <li>1 nouveau développeur toutes les 7 minutes</li>            
+        </ul>   
+    </div>
+    
+    <div id="carac" class="step" data-x="3700" data-y="-1100" >
+        
+        <h2>Caractéristiques</h2>
+        <img src="img/TagCodingDojo.png" class="imgRight" width="300px">
+        <ul>
+            <li>Collaboratif</li>
+            <li>Pas de compétition</li>
+            <li>Environnement « fun »</li>
+            <li>Tous les niveaux sont les bienvenues</li>
+            <li>L’occasion d’essayer de nouvelles idées</li>
+            <li>Baby steps</li>
+       </ul>
+    </div>
+
+
+    <div id="agenda" class="step" data-x="2600" data-y="-500">
+        <h2>Agenda</h2>
+        <ul>
+            <li>10 minutes : présentation du sujet</li>
+            <li>70 minutes : Code !</li>
+            <li>15 minutes : Pause</li>
+            <li>70 minutes : Code !</li>
+            <li>10 minutes : Retrospective/Conclusion</li>
+        </ul>
+    </div>
+
+    <div class="step" data-x="5900" data-y="-1470" data-scale="4">
+     <h3 class="lone">Nous allons faire quoi ?</h3>
+    </div>
+
+    <div class="step" data-x="4900" data-y="-1100" data-scale="1">
+        <h3>Un site de présentation de Coding Dojo :)</h3>
+    </div>
+
+    <div class="step" data-x="5900" data-y="-1100">
+        <h3>Accessible depuis mon ordinateur de bureau ...</h3>
+        TODO screenshot desktop
+    </div>
+
+    <div class="step" data-x="6900" data-y="-1100">
+        <h3>... mais également depuis mon mobile</h3>
+        TODO screenshot mobile iphone/android/wp7/ipad ?
+    </div>
+
+    <div class="step" data-x="6900" data-y="-350">
+        <h3>Ce que nous utiliserons d'HTML5</h3>
+        <ul>
+            <li>Balises sémantiques</li>
+            <li>Aides à la saisie</li>
+            <li>Contenu éditable</li>
+            <li>Géolocalisation</li>
+            <li>Stockage local</li>
+            <li>Lecture audio/vidéo</li>
+            <li>Cache local</li>
+            <li>CSS Animations 3D !</li>
+        </ul> 
+    </div>
+
+    <div class="step" data-x="4900" data-y="-400">
+      <h3>Notre kit de démarrage</h3>
+      <ul>
+          <li>Un squelette de page HTML</li>
+          <li>Une feuille de style CSS</li>
+          <li>Un bout de js (+lib)</li>
+      </ul> 
+    </div>
+
+    <div id="iterationTitle" class="step" data-x="100" data-y="1300" data-scale="5">
+       <h1>Itérations</h1>
+    </div>
+
+    <div class="step" data-x="8000" data-y="3000" data-scale="5" data-rotate-y="65" data-rotate-z="-90">
+    <h1>Qui commence ?</h1>      
+    </div>
+
+    <div id="iteration1" class="step" data-x="-800" data-y="2000" scale="1.5">
+       <h3>Itération 1</h3>
+       Structurer l’application avec les nouvelles balises sémantiques
+<pre><code>&lt;aside&gt; &lt;nav&gt; &lt;article&gt; &lt;header&gt; &lt;footer&gt;</code></pre>
+TODO copie d'écran du squelette 
+    </div>
+
+    <div id="iteration2" class="step" data-x="200" data-y="2000" scale="1.5" >
+       <h3>Itération 2</h3>
+       <p>Profiter d’aide à la saisie et de validation dans les formulaires</p>
+       <p>Types de champ (email, date, etc …), autofocus, placeholder, pattern</p>
+TODO copie d'écran de la partie parametres
+    </div>
+
+    <div id="iteration3" class="step" data-x="1200" data-y="2000" scale="1.5" >
+       <h3>Itération 3</h3>
+       <p>Rendre le contenu éditable</p>
+       <pre><code>contenteditable="true"</code></pre>
+       TODO copie d'écran edition en cours
+    </div>
+
+    <div id="iteration4" class="step" data-x="2200" data-y="2000" scale="1.5">
+       <h3>Itération 4</h3>
+       Stocker en local les paramètres (localstorage)
+       <pre><code>Localstorage.setItem(key, value);
+TODO copie d'écran de la partie parametres avec le message "saved"
+
+    </div>
+
+    <div id="iteration5" class="step" data-x="-800" data-y="2500" scale="1.5">
+       <h3>Itération 5</h3>
+       Restituer les paramètres stockés en local et stocker les contenus éditables à la volée
+       <pre><code>
+var description = document.querySelector(« #presentation »)
+presentation.addEventListener(‘keyup’, function{}, true);
+</code></pre>
+TODO copie d'écran de la page d'accueil avec des valeurs venant de params
+    </div>
+
+    <div id="iteration6" class="step" data-x="200" data-y="2500" scale="1.5">
+       <h3>Itération 6</h3>
+       Afficher une carte avec notre position
+       <pre><code>(navigator.geolocalisation, google maps apis)</code></pre>
+TODO copie d'écran de la page d'accueil avec la map
+    </div>
+
+        <div id="iteration7" class="step" data-x="1200" data-y="2500" scale="1.5">
+       <h3>Itération 7</h3>
+       Rajouter du contenu multimédia
+       TODO copie d'écran de la page d'accueil avec video + audio
+    </div>
+
+    <div id="iteration8" class="step" data-x="2200" data-y="2500" scale="1.5">
+      <h3>Itération 8</h3>
+      Gestion du offline
+      <pre> <code>cache.manifest </code> </pre>
+      TODO code + prez
+    </div>
+
+    <div id="iteration9" class="step" data-x="-800" data-y="3000">
+       <h3>Itération 9</h3>
+       Des animations avec les transitions CSS3
+       <pre><code>
+@keyframes rotate-h1 {
+  0%   { transform: perspective(1000px) rotateY(-10deg); }
+  100% { transform: perspective(1000px) rotateY(10deg); }
+}
+
+transform-style: preserve-3d;
+animation: rotate-h1 2s infinite alternate ease-in-out;
+
+transform: perspective(1000px) rotateY(0deg);
+
+transition: all 2s ease-in-out;
+</code></pre>
+    </div>
+    
+
+  <div id="questions" class="step" data-x="8000" data-y="2000" data-scale="5" data-rotate-y="65" data-rotate-z="-90" >
+        <h2>Des questions ?</h2>
+      </div>
+
+  <div id="thank-you" class="step final" data-x="6400" data-y="1600" data-scale="5">
+    <h2>Merci !</h2>
+
+    <p class="name">Philippe Garry</p>
+    <p class="email"><a href="mailto:philippe.garry@valtech.fr">philippe.garry@valtech.fr</a></p>
+    <p class="name">Ionut Mihalcea</p>
+    <p class="email"><a href="mailto:ionut.mihalcea@valtech.fr">ionut.mihalcea@valtech.fr</a></p>
+
+    <img src="img/valtech.jpg">
+  </div>
+
+  <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+</div>
+
+
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+
+<script src="js/highlight.pack.js"></script>
+<script src="js/impress.js"></script>
+<script src="js/default.js"></script>
+
+</body>
+</html>

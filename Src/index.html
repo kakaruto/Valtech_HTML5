@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Coding Dojo - Valtech</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="prefixfree.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+</head>
+<body onload="initIndex()">
+	<header>Coding Dojo - Valtech</header>
+	<aside>
+		<nav>
+		<h2>Navigation</h2>
+			<ul>
+				<li><a href="index.html">Présentation</a></li>
+				<li><a href="admin.html">Administration</a></li>
+			</ul>	
+		</nav>
+		<div id="map"></div>
+		<audio controls preload>
+				<!-- http://www.jamendo.com/fr/download/track/469312/?output=contentonly -->
+				<source src="hope.mp3" type='audio/mp3; codec="mp3"'>
+				<source src="hope.ogg" type='audio/ogg; codec="vorbis"'>
+			</audio>
+
+		<figure>
+			<video controls preload>
+				<!-- http://www.youtube.com/watch?v=P64SfTm1Xqw --> 
+				<source src="chrome.mp4"> <!-- for Android type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> --> 
+				<source src="chrome.ogv" type='video/ogg; codecs="theora, vorbis"'>
+				<source src="chrome.webm" type='video/webm; codecs="vp8, vorbis"'>
+			</video>
+			<figcaption>Une video</figcaption>
+		</figure>
+	</aside>
+	<div id="content">
+	<article>
+		<p>Avancement : <progress max=10 value=2>2/10</progress></p>
+	</article>
+	
+	<article>
+		
+		
+		<h1 id="nom">Coding Dojo</h1>
+		<p id="complement">On y mange du code, c'est bon mangez-en</p>
+		<h3>Présentation</h3>
+		<div id="description" contenteditable=true>
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>Javascript</li>
+			</ul>
+		</div>
+		<h3>Menu</h3>
+		<div id="menu" contenteditable=true>
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>Javascript</li>
+			</ul>
+		</div>
+	</article>
+	</div>
+	<footer>
+		Valtech 2012 - HTML5 pour mon ordinateur et mon mobile - Ionut Mihalcea &amp; Philippe Garry
+	</footer>
+</body>
+</html>

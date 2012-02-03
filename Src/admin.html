@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Ou je mange ce soir ? - Admin</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body onload="initParams()">
+	<header>On mange ou ce soir ? - Administration</header>
+	<aside>
+		<nav>
+			<ul>
+				<li><a href="index.html">Présentation</a></li>
+				<li><a href="admin.html">Administration</a></li>
+			</ul>	
+		</nav>		
+	</aside>
+	<div id="content">
+	
+	<article>
+		<form id="form">
+			<label for="prenom">Prénom : </label><input id="prenom" type="text" autofocus placeholder="Philippe" pattern="[a-zA-Z \-]*"><br>
+			<label for="nom">Nom de famille : </label><input id="nom" type="text" placeholder="Dupont"><br>
+			<label for="datenaissance">Date de naissance : </label><input id="datenaissance" type="date" placeholder="2010-10-10"><br>
+			<label for="email">Email : </label><input id="email" type="email" placeholder="jdupont@mail.com"><br>
+			<label for="site">Site Internet : </label><input id="site" type="url" placeholder="http://www.google.com"><br>
+			<label for="choix_bieres">Indiquez votre bière préférée :</label>
+			<input list="bieres" type="text" id="choix_bieres">
+			<datalist id="bieres">
+			Votre navigateur ne supporte pas datalist en HTML5
+			  <option value="Meteor">
+			  <option value="Pils">
+			  <option value="Kronenbourg">
+			  <option value="Grimbergen">
+			</datalist>
+			<br><br>
+
+			<input id="save" type="button" value="Sauvegarder" onclick="saveParams()">
+
+			<span id="saveMessage" style="display:none;">Paramètres enregistrés</span>
+
+		</form>
+	</article>
+	</div>
+	<footer>
+		Valtech 2012 - HTML5 pour mon ordinateur et mon mobile - Ionut Mihalcea &amp; Philippe Garry
+	</footer>
+</body>
+</html>
