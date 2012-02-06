@@ -66,10 +66,10 @@ nav ul
     padding: 1em;
 }
 
-    nav ul li
-    {
-        border-bottom: #DDD 1px dotted;
-    }
+nav ul li
+{
+    border-bottom: #DDD 1px dotted;
+}
 
 nav a
 {
@@ -77,10 +77,10 @@ nav a
     text-decoration: none;
 }
 
-    nav a:hover
-    {
-        color: #F27D21;
-    }
+nav a:hover
+{
+    color: #F27D21;
+}
 
 article
 {
@@ -168,11 +168,11 @@ video
     float: left;
 }
 
-    #drag-zone li *
-    {
-        border: 4px solid #888;
-        display: block;
-    }
+#drag-zone li *
+{
+    border: 4px solid #888;
+    display: block;
+}
 
 #drag-zone, #drop-zone, #drop-data
 {
@@ -188,11 +188,11 @@ video
     overflow: auto;
 }
 
-    #drop-zone.hovering
-    {
-        border: 5px solid #aaa;
-        background-color: rgba(255, 0, 0, 0.199219);
-    }
+#drop-zone.hovering
+{
+    border: 5px solid #aaa;
+    background-color: rgba(255, 0, 0, 0.199219);
+}
 
 #drop-img
 {
