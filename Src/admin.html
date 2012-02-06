@@ -28,12 +28,14 @@
 			<label for="choix_bieres">Indiquez votre bière préférée :</label>
 			<input list="bieres" type="text" id="choix_bieres">
 			<datalist id="bieres">
-			Votre navigateur ne supporte pas datalist en HTML5
+			  Votre navigateur ne supporte pas datalist en HTML5
 			  <option value="Meteor">
 			  <option value="Pils">
 			  <option value="Kronenbourg">
 			  <option value="Grimbergen">
-			</datalist>
+			</datalist><br>
+			<label for="place">Places : </label>
+			<input type="number" step="1" min="1" max="25" value="1" />
 			<br><br>
 
 			<input id="save" type="button" value="Sauvegarder" onclick="saveParams()">
