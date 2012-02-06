@@ -7,9 +7,9 @@ function initIndex () {
 
 function initProfil () {
 
-	if(localStorage.getItem('prenom'))
+	if(localStorage.getItem('sujet'))
 	{
-		document.querySelector('#nom').innerHTML = localStorage.getItem('prenom');
+		document.querySelector('#sujet').innerHTML = localStorage.getItem('sujet');
 	}
 	
 	var description = document.querySelector('#description');
@@ -51,11 +51,11 @@ function showPosition () {
 }
 
 function initParams () {
-	document.querySelector('#prenom').value = localStorage.getItem('prenom');
+	document.querySelector('#sujet').value = localStorage.getItem('sujet');
 }
 
 function saveParams () {
-	localStorage.setItem('prenom', document.querySelector('#prenom').value);
+	localStorage.setItem('sujet', document.querySelector('#sujet').value);
 	document.querySelector('#saveMessage').style.display = '';
 
 	document.querySelector('#form').addEventListener('focus', hideSaveMessage, true);
