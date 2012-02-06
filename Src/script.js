@@ -2,6 +2,7 @@ function initIndex () {
 	showMap();
 	showPosition();
 	initProfil();
+	getOrientation();
 }
 
 
@@ -63,4 +64,20 @@ function saveParams () {
 
 function hideSaveMessage () {	
 	document.querySelector('#saveMessage').style.display = 'none';
+}
+
+
+function getOrientation() {
+if(!window.DeviceMotionEvent) {
+    document.querySelector('#orientation').innerHTML = "DeviceOrientation not supported";
+    return;
+} 
+    window.addEventListener('deviceorientation', function (event) {
+        var a = event.alpha;
+        var b = event.beta;
+        var g = event.gamma;
+        document.querySelector('#alpha').innerText = a;
+        document.querySelector('#beta').innerText = b;
+        document.querySelector('#gamma').innerText = g;
+    }, false);
 }
