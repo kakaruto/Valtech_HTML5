@@ -198,6 +198,7 @@ video
 {
     width:80%;
     float:left;
+    height:200px;
     background-color: #eee;
     font-family: Monospace;
     -ms-word-wrap: break-word;
