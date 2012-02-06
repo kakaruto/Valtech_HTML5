@@ -205,9 +205,9 @@ transition: all 2s ease-in-out;
        </code> </pre>      
     </div>
 
-        <div id="iteration11" class="step" data-x="2200" data-y="2500" scale="1.5">
+      <div id="iteration11" class="step" data-x="2200" data-y="2500" scale="1.5">
       <h3>Itération 11</h3>
-      Gestion drag & drop
+      Gestion drag & drop (simple)
       <pre> <code> 
                     dropZone.addEventListener('dragenter',
                           function (event) {}, 
@@ -222,7 +222,20 @@ transition: all 2s ease-in-out;
        </code> </pre>      
     </div>
     
-
+    <div id="iteration12" class="step" data-x="2200" data-y="2500" scale="1.5">
+      <h3>Itération 12</h3>
+      Gestion drag & drop (integration desktop)
+      <pre> <code> 
+dropZone.addEventListener('drop', function (e) {
+   if (event.preventDefault) event.preventDefault();
+    var reader = new FileReader();
+    reader.onload = function(evt) {
+    document.querySelector('#preview').src = evt.target.result;
+    };
+    reader.readAsDataURL(e.dataTransfer.files[0]);
+}, false);
+       </code> </pre>      
+    </div>
   <div id="questions" class="step" data-x="8000" data-y="2000" data-scale="5" data-rotate-y="65" data-rotate-z="-90" >
         <h2>Des questions ?</h2>
       </div>
