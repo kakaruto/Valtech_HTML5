@@ -85,9 +85,7 @@ function getOrientation() {
 
 
 function setDragDrop() {
-    var dragZone = document.querySelector('#drag-zone');
     var dropZone = document.querySelector('#drop-zone');
-
 
     dropZone.addEventListener('dragenter', function (event) {
         if (event.preventDefault) event.preventDefault();
