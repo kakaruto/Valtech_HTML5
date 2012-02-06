@@ -179,7 +179,7 @@ video
     width: 20%;
 }
 
-#drop-zone, #drop-img
+#drop-zone
 {
     padding: 40px;
     border: 5px solid #888;
@@ -196,6 +196,8 @@ video
 
 #drop-img
 {
+    width:80%;
+    float:left;
     background-color: #eee;
     font-family: Monospace;
     -ms-word-wrap: break-word;

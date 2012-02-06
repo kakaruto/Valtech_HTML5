@@ -4,6 +4,7 @@ function initIndex() {
     initProfil();
     getOrientation();
     setDragDrop();
+    setDragDropFiles();
 }
 
 
@@ -89,23 +90,26 @@ function setDragDrop() {
 
 
     dropZone.addEventListener('dragenter', function (event) {
+        if (event.preventDefault) event.preventDefault();
         event.dataTransfer.dropEffect = 'copy';
         this.className = 'hovering';
         return false;
     }, false);
 
     dropZone.addEventListener('dragover', function (event) {
+        if (event.preventDefault) event.preventDefault();
         event.dataTransfer.dropEffect = 'copy';
         return false;
     }, false);
 
     dropZone.addEventListener('dragleave', function (event) {
+        if (event.preventDefault) event.preventDefault();
         this.className = '';
         return false;
     }, false);
 
     dropZone.addEventListener('drop', function (event) {
-
+        if (event.preventDefault) event.preventDefault();
         if (event.dataTransfer.getData('text')) {
             this.innerHTML = event.dataTransfer.getData('text');
         }
@@ -115,4 +119,18 @@ function setDragDrop() {
         return false;
     }, false);
 
+}
+
+function setDragDropFiles()
+{
+    var dropZone = document.querySelector('#drop-img');
+    dropZone.querySelector('#dropzone').addEventListener('drop', function(e) {
+        if (event.preventDefault) event.preventDefault();
+        var reader = new FileReader();
+        reader.onload = function(evt) {
+            document.querySelector('img').src = evt.target.result;
+        };
+        alert(e.dataTransfer.files[0]);
+        reader.readAsDataURL(e.dataTransfer.files[0]);
+    }, false);
 }
