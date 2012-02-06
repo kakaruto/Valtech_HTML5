@@ -1,25 +1,33 @@
-﻿body {
-	width:95%;
-	margin:auto;
+﻿body
+{
+    width: 95%;
+    margin: auto;
 }
 
-@keyframes rotate-h1 {
-        0%   { transform: perspective(1000px) rotateY(-10deg); }
-        100% { transform: perspective(1000px) rotateY(10deg); }
+@keyframes rotate-h1
+{
+    0%
+    {
+        transform: perspective(1000px) rotateY(-10deg);
+    }
+
+    100%
+    {
+        transform: perspective(1000px) rotateY(10deg);
+    }
 }
 
-header {
-	float:left;
-	width:100%;
-	height:1.5em;	
-	text-shadow: 0 1px 0 #ccc, 0 2px;
-	
-	font-weight: bold;
+header
+{
+    float: left;
+    width: 100%;
+    height: 1.5em;
+    text-shadow: 0 1px 0 #ccc, 0 2px;
+    font-weight: bold;
     text-align: center;
     font-size: 3em;
     line-height: 1;
-
-/*
+    /*
     transform-style: preserve-3d;
     animation: rotate-h1 2s infinite alternate ease-in-out;
 
@@ -29,118 +37,177 @@ header {
    */
 }
 
-aside {
-	width:25%;
-	float:left;
-	padding-right:1em;
+aside
+{
+    width: 25%;
+    float: left;
+    padding-right: 1em;
 }
 
 nav h2
 {
-	font-size: 1.4em;
-	margin: 16px 0 6px;
-	padding: 0 0 10px 3px;
-	background: transparent url(img/separator_green.gif) repeat-x scroll center bottom;
-
+    font-size: 1.4em;
+    margin: 16px 0 6px;
+    padding: 0 0 10px 3px;
+    background: transparent url(img/separator_green.gif) repeat-x scroll center bottom;
 }
 
 
-nav ul {
-	font-weight:bold;
-	background-color:#585858;
-	border-radius:0.5em;
-	background: #F7F7F7;
-	-moz-border-radius:0.5em;
-	-webkit-border-radius:0.5em;
-
-	list-style:none;
-	margin-top:0;
-	padding:1em;
-
-
-}
-
-nav ul li
+nav ul
 {
-	border-bottom: #DDD 1px dotted;
+    font-weight: bold;
+    background-color: #585858;
+    border-radius: 0.5em;
+    background: #F7F7F7;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    list-style: none;
+    margin-top: 0;
+    padding: 1em;
 }
 
-nav a {
-	color:#2B2B2B;
-	text-decoration:none;
-}
-nav a:hover {
-	color:#F27D21;
-}
+    nav ul li
+    {
+        border-bottom: #DDD 1px dotted;
+    }
 
-article {
-	width:60%;
-	float:right;
-	padding:1em;
-	border:1px solid #c0c0c0;
-	border-radius:0.5em;	
-	margin-bottom:10px;
-
-	box-shadow: 3px 3px 10px #888;
+nav a
+{
+    color: #2B2B2B;
+    text-decoration: none;
 }
 
-footer {
-	float:left;
-	width:100%;
-	clear:both;
-	margin:0.5em 0;
-	padding:0.3em;
-	text-align:center; 
-	font-weight:bold;
-	color:#c0c0c0;
-	
-	border-radius:0.5em;	
+    nav a:hover
+    {
+        color: #F27D21;
+    }
+
+article
+{
+    width: 60%;
+    float: right;
+    padding: 1em;
+    border: 1px solid #c0c0c0;
+    border-radius: 0.5em;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 10px #888;
 }
 
-input:invalid {
-	background-color:red;
+footer
+{
+    float: left;
+    width: 100%;
+    clear: both;
+    margin: 0.5em 0;
+    padding: 0.3em;
+    text-align: center;
+    font-weight: bold;
+    color: #c0c0c0;
+    border-radius: 0.5em;
 }
 
-#saveMessage {
-	color:green;
+input:invalid
+{
+    background-color: red;
 }
 
-h1 {
-	margin-top:0;
+#saveMessage
+{
+    color: green;
 }
 
-#parcours .poste-societe {
-	margin:0;
-}
-#parcours .description {
-	margin:0;
+h1
+{
+    margin-top: 0;
 }
 
-#map {
-	width:100%;
-	height:10em;
-	margin:1em 0 0 0;
+#parcours .poste-societe
+{
+    margin: 0;
 }
 
-#orientation {
-	width:100%;
-	height:3em;
-	margin:1em 0 0 0;
+#parcours .description
+{
+    margin: 0;
 }
 
-#orientation span{
-    margin-left:1em;
+#map
+{
+    width: 100%;
+    height: 10em;
+    margin: 1em 0 0 0;
 }
 
-audio {
-	width:100%;
-	margin:1em 0 0 0;
-}
-video {
-	width:100%;
-	margin:1em 0 0 0;
+#orientation
+{
+    width: 100%;
+    height: 3em;
+    margin: 1em 0 0 0;
 }
 
+    #orientation span
+    {
+        margin-left: 1em;
+    }
 
+audio
+{
+    width: 100%;
+    margin: 1em 0 0 0;
+}
 
+video
+{
+    width: 100%;
+    margin: 1em 0 0 0;
+}
 
+#drag-zone
+{
+    list-style: none;
+    float: left;
+}
+
+    #drag-zone li *
+    {
+        border: 4px solid #888;
+        display: block;
+    }
+
+#drag-zone, #drop-zone, #drop-data
+{
+    width: 20%;
+}
+
+#drop-zone, #drop-img
+{
+    padding: 40px;
+    border: 5px solid #888;
+    float: right;
+    height: 240px;
+    overflow: auto;
+}
+
+    #drop-zone.hovering
+    {
+        border: 5px solid #aaa;
+        background-color: rgba(255, 0, 0, 0.199219);
+    }
+
+#drop-img
+{
+    background-color: #eee;
+    font-family: Monospace;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.datatypes
+{
+    font-weight: bold;
+}
+
+.draggable-text
+{
+    padding: 5px;
+}
