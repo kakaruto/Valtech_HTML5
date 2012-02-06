@@ -326,6 +326,12 @@ div.abs-box > :not(.base) {
   float:right;
 }
 
+
+.imgCenter
+{  
+  alignment-adjust:central;
+}
+
 .footer span
 {
   color:white;
