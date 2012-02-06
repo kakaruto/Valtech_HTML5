@@ -124,13 +124,22 @@ function setDragDrop() {
 function setDragDropFiles()
 {
     var dropZone = document.querySelector('#drop-img');
-    dropZone.querySelector('#dropzone').addEventListener('drop', function(e) {
+
+    dropZone.addEventListener("dragenter", stopBrowserEvent, false);
+    dropZone.addEventListener("dragexit", stopBrowserEvent, false);
+    dropZone.addEventListener("dragover", stopBrowserEvent, false);
+
+    dropZone.addEventListener('drop', function (e) {
         if (event.preventDefault) event.preventDefault();
         var reader = new FileReader();
         reader.onload = function(evt) {
-            document.querySelector('img').src = evt.target.result;
+            document.querySelector('#preview').src = evt.target.result;
         };
-        alert(e.dataTransfer.files[0]);
         reader.readAsDataURL(e.dataTransfer.files[0]);
     }, false);
+}
+
+function stopBrowserEvent(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
 }
